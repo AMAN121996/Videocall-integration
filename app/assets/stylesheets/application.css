@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+#participantsContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+}
+
+input {
+  font-size: 1.25em;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #555;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 216px;
+}
+
+input:focus {
+  border-bottom: 1px solid #aa01fe;
+}
+
+button {
+  display: block;
+  color: white;
+  background-color: #aa01fe;
+  font-weight: bold;
+  font-size: 1.25em;
+  border: none;
+  padding: 15px;
+  border-radius: 7px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+.participant {
+  box-sizing: border-box;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.identity {
+  font-size: 22px;
+  text-align: center;
+}
+
+video {
+  display: block;
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  width: 500px;
+}
